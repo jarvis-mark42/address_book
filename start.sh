@@ -1,4 +1,4 @@
-cd address_book
+cd /address_book
 
 npm install
 
