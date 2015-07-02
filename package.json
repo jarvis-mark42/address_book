@@ -1,0 +1,10 @@
+{
+  "name": "address_book",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "~4.12.4",
+    "ejs": "~1.0.0",
+    "body-parser": "~1.13.1"
+  }
+}

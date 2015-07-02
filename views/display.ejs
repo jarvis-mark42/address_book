@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		<%= title %>
+	</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Phone</td>
+		</tr>
+		<% for(var i=0;i< users.length; i++) { %>
+		<tr>
+			<td><%= users[i].name %></td>
+			<td><%= users[i].phone %></td>
+		</tr>
+		<% } %>
+	</table>
+</body>
+</html>
