@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 var util = require('util');
 var mongoose = require('mongoose');
-var address = process.env.MONGODB_PORT_27017_TCP_ADDR || "localhost";
-var port = process.env.MONGODB_PORT_27017_TCP_PORT || "27017";
+var address = process.env.MONGO_PORT_27017_TCP_ADDR || "localhost";
+var port = process.env.MONGO_PORT_27017_TCP_PORT || "27017";
 var show = mongoose.connect('mongodb://'+address+':'+port+'/address_book');
 var User = require('./models');
 
