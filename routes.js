@@ -2,11 +2,9 @@ var express = require('express');
 var router = express.Router();
 var util = require('util');
 var mongoose = require('mongoose');
-var address = process.env.DB_PORT_27017_TCP_ADDR || "localhost";
-var port = process.env.DB_PORT_27017_TCP_PORT || "27017";
-var show = mongoose.connect('mongodb://'+address+':'+port+'/address_book');
-mongoose.on('error', function(err) { console.log(err.message); });
-console.log(show);
+var address = process.env.MONGODB_PORT_27017_TCP_ADDR || "localhost";
+var port = process.env.MONGODB_PORT_27017_TCP_PORT || "27017";
+mongoose.connect('mongodb://'+address+':'+port+'/address_book');
 var User = require('./models');
 
 /* GET home page. */
